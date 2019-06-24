@@ -1,10 +1,8 @@
 package com.kuznetsova.healthycafe.nutritionist;
 
-import android.app.ActionBar;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.os.Build;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -193,7 +191,7 @@ public class DishEditActivity extends AppCompatActivity implements IngredientsEd
             if(!checkFields()){
                 if(toast != null)
                     toast.cancel();
-                toast = Toast.makeText(this, R.string.message_fill_all_fields, Toast.LENGTH_LONG);
+                toast = Toast.makeText(this, R.string.error_fill_all_fields, Toast.LENGTH_LONG);
                 toast.show();
             }
             else{

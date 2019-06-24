@@ -23,7 +23,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Название" />
+            android:text="@string/dish_name" />
 
         <EditText
             android:id="@+id/et_dish_name"
@@ -43,7 +43,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Вес" />
+            android:text="@string/dish_weight" />
 
         <EditText
             android:id="@+id/et_dish_weight"
@@ -63,7 +63,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Стоимость" />
+            android:text="@string/dish_price" />
 
         <EditText
             android:id="@+id/et_dish_cost"
@@ -109,28 +109,28 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Калории"
+            android:text="@string/dish_calories"
             android:textAlignment="center" />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Белки"
+            android:text="@string/dish_proteins"
             android:textAlignment="center" />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Жиры"
+            android:text="@string/dish_fats"
             android:textAlignment="center" />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Углеводы"
+            android:text="@string/dish_carbohydrates"
             android:textAlignment="center" />
 
     </LinearLayout>

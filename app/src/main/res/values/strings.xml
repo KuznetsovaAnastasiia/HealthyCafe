@@ -1,42 +1,45 @@
 <resources>
     <string name="app_name">Healthy cafe</string>
-    <string name="activity_add_dish_title">Добавить блюдо</string>
+
     <string name="dish_name">Название</string>
     <string name="dish_weight">Вес</string>
+    <string name="dish_price">Цена</string>
     <string name="dish_information_text">Информация о блюде</string>
     <string name="dish_ingredients_text">Ингредиенты</string>
-    <string name="add">+</string>
     <string name="dish_nutritional_value">Пищевая ценность</string>
-    <string name="calories">Калории</string>
-    <string name="proteins">Белки</string>
-    <string name="fats">Жири</string>
-    <string name="carbohydrates">Углеводы</string>
-    <string name="message_fill_all_fields">Заполните все поля</string>
+    <string name="dish_calories">Калории</string>
+    <string name="dish_proteins">Белки</string>
+    <string name="dish_fats">Жиры</string>
+    <string name="dish_carbohydrates">Углеводы</string>
+
     <string name="title_save">Сохранить</string>
     <string name="title_edit">Редактировать</string>
-    <string name="title_activity_login">Sign in</string>
 
-    <!-- Strings related to login -->
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password (optional)</string>
-    <string name="action_sign_in">Sign in or register</string>
     <string name="action_sign_in_short">Sign in</string>
-    <string name="error_invalid_email">This email address is invalid</string>
-    <string name="error_invalid_password">This password is too short</string>
-    <string name="error_incorrect_password">This password is incorrect</string>
-    <string name="error_field_required">This field is required</string>
-    <string name="permission_rationale">"Contacts permissions are needed for providing email
-        completions."
-    </string>
-    <string name="title_activity_info">Информация о блюде</string>
-    <string name="title_activity_main">Меню</string>
+    <string name="error_fill_all_fields">Заполните все поля</string>
+
     <string name="title_delete">Удалить</string>
     <string name="btn_delete">-</string>
+    <string name="btn_add">+</string>
+
+    <string name="title_activity_info">Информация о блюде</string>
+    <string name="title_activity_main">Меню</string>
     <string name="title_activity_orders">Заказы</string>
     <string name="title_activity_create_order">Создать заказ</string>
     <string name="title_activity_create_dish">Создать блюдо</string>
     <string name="title_activity_dish_calories_calc">Расчет калорийности</string>
+
     <string name="menu_item_next">Далее</string>
-    <string name="add_ingredietn_title">Введите название ингредиента</string>
-    <string name="add_ingredietn_hint">Название</string>
+
+    <string name="add_ingredient_title">Введите название ингредиента</string>
+    <string name="add_ingredient_hint">Название</string>
+
+    <string name="order_table">Номер стола</string>
+    <string name="order_lead_time">Время выполнения</string>
+    <string name="order_waiter">Официант</string>
+    <string name="order_price">Сумма</string>
+    <string name="order_dishes">Блюда</string>
+    <string name="order_number">Заказ</string>
+    <string name="order_created">Время заказа</string>
+    <string name="order_dishes_list_title">Блюда:</string>
 </resources>

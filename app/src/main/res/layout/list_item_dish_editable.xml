@@ -37,6 +37,6 @@
         android:layout_height="24dp"
         android:layout_weight="0"
         android:background="@android:color/transparent"
-        android:text="@string/add" />
+        android:text="@string/btn_add" />
 
 </LinearLayout>

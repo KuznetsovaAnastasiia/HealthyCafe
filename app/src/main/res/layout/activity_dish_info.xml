@@ -73,28 +73,28 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/calories"
+            android:text="@string/dish_calories"
             android:textAlignment="center" />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/proteins"
+            android:text="@string/dish_proteins"
             android:textAlignment="center" />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/fats"
+            android:text="@string/dish_fats"
             android:textAlignment="center" />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/carbohydrates"
+            android:text="@string/dish_carbohydrates"
             android:textAlignment="center" />
 
     </LinearLayout>

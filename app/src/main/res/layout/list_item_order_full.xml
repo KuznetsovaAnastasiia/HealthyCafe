@@ -20,7 +20,7 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Заказ"
+            android:text="@string/order_number"
             android:textAlignment="textStart" />
 
         <TextView
@@ -36,7 +36,7 @@
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Столик"
+            android:text="@string/order_table"
             android:textAlignment="textStart" />
 
         <TextView
@@ -52,7 +52,7 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Сумма"
+            android:text="@string/order_price"
             android:textAlignment="textStart" />
 
         <TextView
@@ -77,7 +77,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1.5"
-            android:text="Время выполнения" />
+            android:text="@string/order_lead_time" />
 
         <TextView
             android:id="@+id/tv_order_time_implement"
@@ -93,7 +93,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Время заказа"
+            android:text="@string/order_created"
             android:textAlignment="textEnd" />
 
         <TextView
@@ -126,7 +126,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0"
-            android:text="Блюда: " />
+            android:text="@string/order_dishes_list_title" />
 
         <TextView
             android:id="@+id/tv_order_dishes"

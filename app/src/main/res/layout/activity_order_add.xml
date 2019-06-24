@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:layout_weight="1.1"
-            android:text="Номер столика" />
+            android:text="@string/order_table" />
 
         <EditText
             android:id="@+id/et_order_table_number"
@@ -45,7 +45,7 @@
             android:layout_gravity="center"
             android:layout_marginEnd="8dp"
             android:layout_weight="1.1"
-            android:text="Время выполнения" />
+            android:text="@string/order_lead_time" />
 
         <EditText
             android:id="@+id/et_order_lead_time"
@@ -71,7 +71,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Официант: " />
+            android:text="@string/order_waiter" />
 
         <TextView
             android:id="@+id/tv_order_waiter"
@@ -94,7 +94,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Сумма: " />
+            android:text="@string/order_price" />
 
         <TextView
             android:id="@+id/tv_order_price"
@@ -116,13 +116,13 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Блюда" />
+            android:text="@string/order_dishes" />
 
         <Button
             android:id="@+id/btn_order_add_dish"
             style="@style/ButtonAdd"
             android:layout_height="32dp"
-            android:text="@string/add" />
+            android:text="@string/btn_add" />
     </LinearLayout>
 
     <android.support.v7.widget.RecyclerView
