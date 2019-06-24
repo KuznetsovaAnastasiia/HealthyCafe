@@ -1,4 +1,4 @@
-package com.kuznetsova.healthycafe;
+package com.kuznetsova.healthycafe.main;
 
 import android.content.Context;
 import android.content.Intent;
@@ -13,6 +13,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.kuznetsova.healthycafe.R;
 import com.kuznetsova.healthycafe.chef.OrdersChefMainActivity;
 import com.kuznetsova.healthycafe.database.DatabaseHandler;
 import com.kuznetsova.healthycafe.entity.Chef;

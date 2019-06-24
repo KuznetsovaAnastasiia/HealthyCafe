@@ -42,6 +42,11 @@
     <string name="order_number">Заказ</string>
     <string name="order_created">Время заказа</string>
     <string name="order_dishes_list_title">Блюда:</string>
+
     <string name="message_edit_dish">Информация изменена</string>
     <string name="btn_ok">Ок</string>
+    <string name="message_dish_saved">Блюдо добавлено</string>
+    <string name="dish_weight_">Вес:</string>
+    <string name="dish_waiter">Повар</string>
+    <string name="message_dish_deleted">Блюдо удалено</string>
 </resources>

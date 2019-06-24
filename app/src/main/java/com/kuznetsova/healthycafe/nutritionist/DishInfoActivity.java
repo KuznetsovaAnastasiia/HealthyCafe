@@ -14,7 +14,6 @@ import android.widget.Toast;
 
 import com.kuznetsova.healthycafe.database.DatabaseHandler;
 import com.kuznetsova.healthycafe.R;
-import com.kuznetsova.healthycafe.SimpleSectionedRecyclerViewAdapter;
 import com.kuznetsova.healthycafe.entity.Chef;
 import com.kuznetsova.healthycafe.entity.Dish;
 
@@ -78,8 +77,8 @@ public class DishInfoActivity extends AppCompatActivity {
 
     public void setData(){
         tvName.setText(dish.getName());
-        tvWeight.setText("Вес: " + Integer.toString(dish.getWeight()) + " г.");
-        tvPrice.setText("Цена: " + Integer.toString(dish.getPrice()) + " грн.");
+        tvWeight.setText(getString(R.string.dish_weight) + ": " + Integer.toString(dish.getWeight()) + " г.");
+        tvPrice.setText(getString(R.string.dish_price) + ": " + Integer.toString(dish.getPrice()) + " грн.");
         tvType.setText(dish.getType().getName());
         tvMenu.setText(dish.getMenu().getName());
 
@@ -87,7 +86,7 @@ public class DishInfoActivity extends AppCompatActivity {
         if(chef.getName().equals(""))
             tvChef.setText("-");
         else
-            tvChef.setText("Повар: " + chef.getSurname() + " " + chef.getName().toCharArray()[0] + ". " + chef.getPatronymic().toCharArray()[0] + ".");
+            tvChef.setText(getString(R.string.dish_waiter) + chef.getSurname() + " " + chef.getName().toCharArray()[0] + ". " + chef.getPatronymic().toCharArray()[0] + ".");
 
         tvCalories.setText(Integer.toString(dish.getCalories()));
         tvProteins.setText(Integer.toString(dish.getProteins()));
@@ -97,7 +96,7 @@ public class DishInfoActivity extends AppCompatActivity {
         rvIngredients.setLayoutManager(new LinearLayoutManager(this));
         rvIngredients.addItemDecoration(new DividerItemDecoration(this,LinearLayoutManager.VERTICAL));
         ingredientsEditAdapter = new IngredientsEditAdapter(this, dish.getIngredients(), null,false,dishID);
-        rvIngredients.setAdapter(new SimpleSectionedRecyclerViewAdapter(this,R.layout.title_section,R.id.section_text,ingredientsEditAdapter));
+        rvIngredients.setAdapter(new MenuTypeRecyclerViewAdapter(this,R.layout.title_section,R.id.section_text,ingredientsEditAdapter));
     }
 
     @Override
@@ -119,7 +118,7 @@ public class DishInfoActivity extends AppCompatActivity {
                 break;
             case R.id.menu_item_delete:
                 database.deleteDish(dishID);
-                Toast.makeText(this, "Блюдо удалено", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, R.string.message_dish_deleted, Toast.LENGTH_SHORT).show();
                 finish();
                 break;
         }
@@ -129,7 +128,6 @@ public class DishInfoActivity extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        //todo refresh dish
         dish = database.getDish(dishID);
         setData();
         super.onActivityResult(requestCode, resultCode, data);

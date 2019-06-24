@@ -24,7 +24,6 @@ import com.kuznetsova.healthycafe.database.DatabaseHandler;
 import com.kuznetsova.healthycafe.entity.Chef;
 import com.kuznetsova.healthycafe.entity.Dish;
 import com.kuznetsova.healthycafe.R;
-import com.kuznetsova.healthycafe.SimpleSectionedRecyclerViewAdapter;
 import com.kuznetsova.healthycafe.entity.DishType;
 import com.kuznetsova.healthycafe.entity.Ingredient;
 import com.kuznetsova.healthycafe.entity.MenuType;
@@ -140,7 +139,7 @@ public class DishEditActivity extends AppCompatActivity implements IngredientsEd
         }
 
         ingredientsEditAdapter = new IngredientsEditAdapter(this, dish.getIngredients(),this, true, dishID);
-        rvIngredients.setAdapter(new SimpleSectionedRecyclerViewAdapter(this,R.layout.title_section,R.id.section_text,ingredientsEditAdapter));
+        rvIngredients.setAdapter(new MenuTypeRecyclerViewAdapter(this,R.layout.title_section,R.id.section_text,ingredientsEditAdapter));
 
 
         btnAdd.setOnClickListener(new View.OnClickListener() {

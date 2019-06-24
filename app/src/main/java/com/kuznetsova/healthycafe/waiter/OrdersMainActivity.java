@@ -13,7 +13,7 @@ import android.view.View;
 import com.kuznetsova.healthycafe.database.DatabaseHandler;
 import com.kuznetsova.healthycafe.entity.Order;
 import com.kuznetsova.healthycafe.R;
-import com.kuznetsova.healthycafe.SimpleSectionedRecyclerViewAdapter;
+import com.kuznetsova.healthycafe.nutritionist.MenuTypeRecyclerViewAdapter;
 import com.kuznetsova.healthycafe.entity.Waiter;
 
 import java.util.List;
@@ -94,7 +94,7 @@ public class OrdersMainActivity extends AppCompatActivity implements OrderAdapte
         orderAdapter = new OrderAdapter(this, orders, this);
 
         //Add an adapter to the sectionAdapter
-        rvOrders.setAdapter(new SimpleSectionedRecyclerViewAdapter(this,R.layout.title_section,R.id.section_text,orderAdapter));
+        rvOrders.setAdapter(new MenuTypeRecyclerViewAdapter(this,R.layout.title_section,R.id.section_text,orderAdapter));
     }
 
     @Override

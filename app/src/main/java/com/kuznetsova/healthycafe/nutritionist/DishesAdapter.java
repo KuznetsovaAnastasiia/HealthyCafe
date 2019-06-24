@@ -72,7 +72,6 @@ public class DishesAdapter extends RecyclerView.Adapter<DishesAdapter.SimpleView
         holder.layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Toast.makeText(mContext, "Position = " + position, Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(mContext, DishInfoActivity.class);
                 intent.putExtra("nutritionist_id", nutritionistId);
                 intent.putExtra("dish_id", (int)mDishes.get(position).getId());

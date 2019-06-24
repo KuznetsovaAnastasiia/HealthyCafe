@@ -9,7 +9,7 @@ import android.support.v7.widget.RecyclerView;
 
 import com.kuznetsova.healthycafe.database.DatabaseHandler;
 import com.kuznetsova.healthycafe.R;
-import com.kuznetsova.healthycafe.SimpleSectionedRecyclerViewAdapter;
+import com.kuznetsova.healthycafe.nutritionist.MenuTypeRecyclerViewAdapter;
 import com.kuznetsova.healthycafe.entity.Dish;
 import com.kuznetsova.healthycafe.entity.DishType;
 
@@ -26,7 +26,7 @@ public class DishesListActivity extends AppCompatActivity implements DishesListA
 
     //adapters for recyclerView
     private DishesListAdapter mAdapter;
-    private SimpleSectionedRecyclerViewAdapter.Section[] dummy;
+    private MenuTypeRecyclerViewAdapter.Section[] dummy;
 
     //dish info
     private List<DishType> dishesTypes;
@@ -66,18 +66,18 @@ public class DishesListActivity extends AppCompatActivity implements DishesListA
         mAdapter = new DishesListAdapter(this, dishes, this);
 
         //Provide a sectioned list for dishes types
-        List<SimpleSectionedRecyclerViewAdapter.Section> sections = new ArrayList<SimpleSectionedRecyclerViewAdapter.Section>();
+        List<MenuTypeRecyclerViewAdapter.Section> sections = new ArrayList<MenuTypeRecyclerViewAdapter.Section>();
         //Add sections
         int position = 0;
         for(int i = 0; i< dishesTypes.size(); i++) {
-            sections.add(new SimpleSectionedRecyclerViewAdapter.Section(position, dishesTypes.get(i).getName()));
+            sections.add(new MenuTypeRecyclerViewAdapter.Section(position, dishesTypes.get(i).getName()));
             position += database.getCountDishesWithType(dishesTypes.get(i));
         }
 
         //Add an adapter to the sectionAdapter
-        dummy = new SimpleSectionedRecyclerViewAdapter.Section[sections.size()];
-        SimpleSectionedRecyclerViewAdapter mSectionedAdapter = new
-                SimpleSectionedRecyclerViewAdapter(this,R.layout.title_section,R.id.section_text,mAdapter);
+        dummy = new MenuTypeRecyclerViewAdapter.Section[sections.size()];
+        MenuTypeRecyclerViewAdapter mSectionedAdapter = new
+                MenuTypeRecyclerViewAdapter(this,R.layout.title_section,R.id.section_text,mAdapter);
         mSectionedAdapter.setSections(sections.toArray(dummy));
 
         //Apply this adapter to the RecyclerView

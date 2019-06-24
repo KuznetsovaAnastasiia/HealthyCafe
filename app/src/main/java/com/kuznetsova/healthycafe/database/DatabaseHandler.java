@@ -23,7 +23,6 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     private static final int DATABASE_VERSION = 1;
     private static final String DATABASE_NAME = "HealthyCafe";
 
-
     private static final String TABLE_CHEFS = "chef";
     private static final String FIELD_CHEF_ID_KEY = "chef_id";
     private static final String FIELD_CHEF_NAME = "chef_name";

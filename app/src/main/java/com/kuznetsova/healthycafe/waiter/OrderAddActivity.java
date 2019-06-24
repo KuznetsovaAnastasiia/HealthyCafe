@@ -18,7 +18,7 @@ import android.widget.Toast;
 
 import com.kuznetsova.healthycafe.database.DatabaseHandler;
 import com.kuznetsova.healthycafe.R;
-import com.kuznetsova.healthycafe.SimpleSectionedRecyclerViewAdapter;
+import com.kuznetsova.healthycafe.nutritionist.MenuTypeRecyclerViewAdapter;
 import com.kuznetsova.healthycafe.entity.Dish;
 import com.kuznetsova.healthycafe.entity.Order;
 import com.kuznetsova.healthycafe.entity.Waiter;
@@ -111,12 +111,12 @@ public class OrderAddActivity extends AppCompatActivity implements View.OnClickL
         dishesInOrderAdapter = new DishesInOrderAdapter(this, order.getDishes(), order.getNumbers(), this);
 
         //Provide a sectioned list for dishes types
-        List<SimpleSectionedRecyclerViewAdapter.Section> sections = new ArrayList<SimpleSectionedRecyclerViewAdapter.Section>();
+        List<MenuTypeRecyclerViewAdapter.Section> sections = new ArrayList<MenuTypeRecyclerViewAdapter.Section>();
 
         //Add an adapter to the sectionAdapter
-        SimpleSectionedRecyclerViewAdapter.Section[] dummy = new SimpleSectionedRecyclerViewAdapter.Section[sections.size()];
-        SimpleSectionedRecyclerViewAdapter mSectionedAdapter = new
-                SimpleSectionedRecyclerViewAdapter(this,R.layout.title_section,R.id.section_text,dishesInOrderAdapter);
+        MenuTypeRecyclerViewAdapter.Section[] dummy = new MenuTypeRecyclerViewAdapter.Section[sections.size()];
+        MenuTypeRecyclerViewAdapter mSectionedAdapter = new
+                MenuTypeRecyclerViewAdapter(this,R.layout.title_section,R.id.section_text,dishesInOrderAdapter);
         mSectionedAdapter.setSections(sections.toArray(dummy));
 
         //Apply this adapter to the RecyclerView
