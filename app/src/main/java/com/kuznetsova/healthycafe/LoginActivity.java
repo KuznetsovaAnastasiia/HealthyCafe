@@ -14,12 +14,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.kuznetsova.healthycafe.chef.OrdersChefMainActivity;
+import com.kuznetsova.healthycafe.database.DatabaseHandler;
 import com.kuznetsova.healthycafe.entity.Chef;
-import com.kuznetsova.healthycafe.entity.Dish;
 import com.kuznetsova.healthycafe.entity.DishType;
 import com.kuznetsova.healthycafe.entity.MenuType;
 import com.kuznetsova.healthycafe.entity.Nutritionist;
-import com.kuznetsova.healthycafe.entity.Order;
 import com.kuznetsova.healthycafe.entity.Waiter;
 import com.kuznetsova.healthycafe.nutritionist.DishesMainActivity;
 import com.kuznetsova.healthycafe.waiter.OrdersMainActivity;

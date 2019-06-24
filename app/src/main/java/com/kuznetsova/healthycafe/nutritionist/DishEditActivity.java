@@ -20,7 +20,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.kuznetsova.healthycafe.DatabaseHandler;
+import com.kuznetsova.healthycafe.database.DatabaseHandler;
 import com.kuznetsova.healthycafe.entity.Chef;
 import com.kuznetsova.healthycafe.entity.Dish;
 import com.kuznetsova.healthycafe.R;
@@ -51,7 +51,6 @@ public class DishEditActivity extends AppCompatActivity implements IngredientsEd
 
     private IngredientsEditAdapter ingredientsEditAdapter;
 
-    private int REQUEST_CODE_EDIT = 0;
     private Toast toast;
 
     private Dish dish;
@@ -155,10 +154,9 @@ public class DishEditActivity extends AppCompatActivity implements IngredientsEd
                 final EditText userInputDialogEditText = mView.findViewById(R.id.et_ingredient);
                 alertDialogBuilderUserInput
                     .setCancelable(true)
-                    .setPositiveButton("Ок", new DialogInterface.OnClickListener() {
+                    .setPositiveButton(R.string.btn_ok, new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialogBox, int id) {
                             if(!userInputDialogEditText.getText().toString().isEmpty()) {
-//                                dish.getIngredients().add(new Ingredient(userInputDialogEditText.getText().toString(), 0));
                                 ingredientsEditAdapter.add(new Ingredient(userInputDialogEditText.getText().toString(), 0), -1);
                             }
                         }
@@ -179,7 +177,6 @@ public class DishEditActivity extends AppCompatActivity implements IngredientsEd
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.item_save, menu);
-//        inflater.inflate(R.menu.item_next, menu);
 
         return true;
     }
@@ -187,7 +184,6 @@ public class DishEditActivity extends AppCompatActivity implements IngredientsEd
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if(item.getItemId() == R.id.menu_item_save){
-//        if(item.getItemId() == R.id.menu_item_next){
             if(!checkFields()){
                 if(toast != null)
                     toast.cancel();
@@ -232,13 +228,11 @@ public class DishEditActivity extends AppCompatActivity implements IngredientsEd
                     database.createDishWithIngredients(dish);
                 else {
                     database.updateDishWithIngredients(dish);
-                    toast = Toast.makeText(this, "Информация изменена", Toast.LENGTH_SHORT);
+                    toast = Toast.makeText(this, R.string.message_edit_dish, Toast.LENGTH_SHORT);
                     toast.show();
                 }
                 setResult(RESULT_OK);
                 finish();
-//                Intent intent = new Intent(this, DishCaloriesCalc.class);
-//                startActivityForResult(intent, REQUEST_CODE_EDIT);
             }
         }
 

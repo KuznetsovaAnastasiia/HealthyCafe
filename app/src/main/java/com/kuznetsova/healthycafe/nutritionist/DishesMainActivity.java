@@ -10,15 +10,12 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Toast;
 
-import com.kuznetsova.healthycafe.DatabaseHandler;
+import com.kuznetsova.healthycafe.database.DatabaseHandler;
 import com.kuznetsova.healthycafe.R;
 import com.kuznetsova.healthycafe.SimpleSectionedRecyclerViewAdapter;
-import com.kuznetsova.healthycafe.entity.Chef;
 import com.kuznetsova.healthycafe.entity.Dish;
 import com.kuznetsova.healthycafe.entity.DishType;
-import com.kuznetsova.healthycafe.entity.MenuType;
 import com.kuznetsova.healthycafe.entity.Nutritionist;
-import com.kuznetsova.healthycafe.entity.Waiter;
 
 import java.util.ArrayList;
 import java.util.List;

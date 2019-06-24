@@ -7,13 +7,11 @@ import android.os.Bundle;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.View;
 
-import com.kuznetsova.healthycafe.DatabaseHandler;
+import com.kuznetsova.healthycafe.database.DatabaseHandler;
 import com.kuznetsova.healthycafe.R;
 import com.kuznetsova.healthycafe.SimpleSectionedRecyclerViewAdapter;
 import com.kuznetsova.healthycafe.entity.Chef;
-import com.kuznetsova.healthycafe.entity.Dish;
 import com.kuznetsova.healthycafe.entity.Order;
 
 import java.util.ArrayList;

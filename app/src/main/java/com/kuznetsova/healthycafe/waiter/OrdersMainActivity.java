@@ -10,13 +10,12 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
-import com.kuznetsova.healthycafe.DatabaseHandler;
+import com.kuznetsova.healthycafe.database.DatabaseHandler;
 import com.kuznetsova.healthycafe.entity.Order;
 import com.kuznetsova.healthycafe.R;
 import com.kuznetsova.healthycafe.SimpleSectionedRecyclerViewAdapter;
 import com.kuznetsova.healthycafe.entity.Waiter;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class OrdersMainActivity extends AppCompatActivity implements OrderAdapter.ListItemClickListener {

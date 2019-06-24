@@ -12,7 +12,7 @@ import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.kuznetsova.healthycafe.DatabaseHandler;
+import com.kuznetsova.healthycafe.database.DatabaseHandler;
 import com.kuznetsova.healthycafe.R;
 import com.kuznetsova.healthycafe.SimpleSectionedRecyclerViewAdapter;
 import com.kuznetsova.healthycafe.entity.Chef;

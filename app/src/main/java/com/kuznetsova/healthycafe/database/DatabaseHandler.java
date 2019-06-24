@@ -1,4 +1,4 @@
-package com.kuznetsova.healthycafe;
+package com.kuznetsova.healthycafe.database;
 
 import android.content.ContentValues;
 import android.content.Context;
