@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="DishesTypes">
+        <item>Мясо</item>
+        <item>Салаты</item>
+        <item>Супы</item>
+        <item>Гарниры</item>
+        <item>Десерты</item>
+        <item>Напитки</item>
+    </array>
+
+    <array name="MenuTypes">
+        <item>Стандартное меню</item>
+        <item>Детское меню</item>
+        <item>Сезонное меню</item>
+    </array>
+
+    <array name="Chefs">
+        <item>Иванов Артем Александрович</item>
+        <item>Петров Олег Петрович</item>
+    </array>
+
+    <array name="Waiters">
+        <item>Жуков Иван Иванович</item>
+        <item>Карпов Иван Викторович</item>
+        <item>Никонов Роман Алексеевич</item>
+    </array>
+
+    <array name="Nutritionists">
+        <item>Орехова Анна Васильевна</item>
+    </array>
+</resources>

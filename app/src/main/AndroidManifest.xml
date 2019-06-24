@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kuznetsova.healthycafe">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".nutritionist.DishesMainActivity"
+            android:label="@string/title_activity_main">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LoginActivity" />
+        </activity>
+        <activity
+            android:name=".waiter.OrdersMainActivity"
+            android:label="@string/title_activity_orders">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LoginActivity" />
+        </activity>
+        <activity
+            android:name=".chef.OrdersChefMainActivity"
+            android:label="@string/title_activity_orders">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LoginActivity" />
+        </activity>
+        <activity
+            android:name=".nutritionist.DishInfoActivity"
+            android:label="@string/title_activity_info">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".nutritionist.DishesMainActivity" />
+        </activity>
+        <activity
+            android:name=".nutritionist.DishEditActivity"
+            android:label="@string/title_edit">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".nutritionist.DishesMainActivity" />
+        </activity>
+        <activity
+            android:name=".waiter.OrderAddActivity"
+            android:label="@string/title_activity_create_order">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".waiter.OrdersMainActivity" />
+        </activity>
+        <activity
+            android:name=".waiter.DishesListActivity"
+            android:label="@string/title_activity_main">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".waiter.OrderAddActivity" />
+        </activity>
+    </application>
+
+</manifest>

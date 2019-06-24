@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".nutritionist.DishInfoActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dish_information_text"
+        style="@style/Title"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/ItemMargins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/tv_weight"
+        style="@style/ItemMargins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weight" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        style="@style/ItemMargins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price" />
+
+    <TextView
+        android:id="@+id/tv_type"
+        style="@style/ItemMargins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dish type" />
+
+    <TextView
+        android:id="@+id/tv_menu"
+        style="@style/ItemMargins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu" />
+
+    <TextView
+        android:id="@+id/tv_chef"
+        style="@style/ItemMargins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Кухар" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dish_nutritional_value"
+        android:layout_marginTop="8dp"
+        style="@style/Title"/>
+
+    <LinearLayout
+        style="@style/ItemMargins"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/calories"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/proteins"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/fats"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/carbohydrates"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/tv_caries"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="10"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tv_proteins"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="10"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tv_fats"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="100"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tv_carbohydrates"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="100"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+
+    <TextView
+        style="@style/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dish_ingredients_text" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_dishes_list_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
